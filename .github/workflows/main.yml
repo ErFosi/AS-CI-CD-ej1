@@ -6,6 +6,8 @@ jobs:
   tareas:
     runs-on: ubuntu-latest
     steps:
+      - name: Bajar codigo
+        run: actions/checkout@v4
       - name: Instalar
         run: pip install pytest
     
