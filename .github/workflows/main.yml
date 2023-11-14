@@ -6,5 +6,8 @@ jobs:
   tareas:
     runs-on: ubuntu-latest
     steps:
+      - name: Instalar
+        run: piip install pytest
+    
       - name: Probar codigo
         run: python3 test.py
